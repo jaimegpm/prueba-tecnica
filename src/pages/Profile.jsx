@@ -29,14 +29,14 @@ function Profile() {
       
       {isLoggedIn && usuario ? (
         <div className="profile-data">
-          <img src="/images/icons/logo.svg" alt="Logo" className="logo" />
+          <img src="./images/icons/logo.svg" alt="Logo" className="logo" />
           <p><strong>Usuario:</strong> {usuario.username}</p>
           <p><strong>Nombre y Apellidos:</strong> {usuario.name} {usuario.lastname}</p>
           <button onClick={handleLogout}>Cerrar sesión</button>
         </div>
       ) : (
         <div className="login-container">
-          <img src="/images/icons/logo.svg" alt="Logo" className="logo" />
+          <img src="./images/icons/logo.svg" alt="Logo" className="logo" />
           <p>Has cerrado sesión</p>
           <button onClick={handleLogin}>Iniciar sesión</button>
         </div>
